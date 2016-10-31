@@ -25,7 +25,7 @@ public class Planet {
     private String overview;
     private String image;
     private String description;
-    private float distanceFromSun;
+    private double distanceFromSun;
     private int numberOfMoons;
 
     public int getPlanetId() { return planetId; }
@@ -43,8 +43,8 @@ public class Planet {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
-    public float getDistanceFromSun() { return distanceFromSun; }
-    public void setDistanceFromSun(float distanceFromSun) { this.distanceFromSun = distanceFromSun; }
+    public double getDistanceFromSun() { return distanceFromSun; }
+    public void setDistanceFromSun(double distanceFromSun) { this.distanceFromSun = distanceFromSun; }
 
     public int getNumberOfMoons() { return numberOfMoons;}
     public void setNumberOfMoons(int numberOfMoons) { this.numberOfMoons = numberOfMoons; }

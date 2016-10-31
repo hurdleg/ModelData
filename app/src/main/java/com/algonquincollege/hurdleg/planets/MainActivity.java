@@ -28,6 +28,7 @@ import java.util.List;
  * Reference: based on ModelData in "Connecting Android Apps to RESTful Web Services" with David Gassner
  */
 public class MainActivity extends Activity {
+
     // URL to my RESTful API Service hosted on my Bluemix account.
     public static final String REST_URI = "https://planets-hurdleg.mybluemix.net/planets/2";
 
@@ -35,7 +36,6 @@ public class MainActivity extends Activity {
     private ProgressBar pb;
 
     private List<Planet> planetList;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
