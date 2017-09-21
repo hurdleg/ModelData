@@ -29,13 +29,17 @@ import java.util.List;
  */
 public class MainActivity extends Activity {
 
-    // URL to my RESTful API Service hosted on my Bluemix account.
-    public static final String REST_URI = "https://planets-hurdleg.mybluemix.net/planets/2";
+    private static final Boolean LOCALHOST = false;
+    private static final String  REST_URI;
 
     private TextView output;
     private ProgressBar pb;
 
     private List<Planet> planetList;
+
+    static {
+        REST_URI = LOCALHOST ? "http://10.0.2.2:3000/planets/2" : "https://planets.mybluemix.net/planets/2";
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
